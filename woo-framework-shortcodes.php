@@ -2,7 +2,7 @@
 if ( ! defined('ABSPATH') ) exit;
 /**
 * Plugin Name: WooThemes Shortcodes
-* Plugin URI: https://github.com/anandamd/woo-framework-shortcodes
+* Plugin URI: https://github.com/RiaanKnoetze/woothemes-shortcodes
 * Description: Easily switch to a non WooThemes theme but retain the framework shortcodes. Use shortcodes from WooFramework in another theme. 
 * Author: Riaan Knoetze
 * License: GPLv2
