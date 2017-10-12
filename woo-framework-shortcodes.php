@@ -16,7 +16,29 @@ add_action ('init', 'plugin_activation_check');
 
 // Check if Canvas is active
 function plugin_activation_check() {
-	if ( get_template() != 'canvas' ) {
+
+	$retired_themes = array(
+	    'canvas',
+	    'Definition',
+	    'forthecause',
+	    'function',
+	    'hub',
+	    'hustle',
+	    'memorable',
+	    'peddlar',
+	    'resort',
+	    'scrollider',
+	    'sentient',
+	    'superstore',
+	    'theonepager',
+	    'upstart',
+	    'mystile',
+	    'wootique',
+	    'woostore',
+	    'artificer',
+	);
+
+	if ( ! in_array( get_template(), $retired_themes ) ) {
 
 		$functions_path = plugin_dir_path( __FILE__ ) . 'functions/';			
 		require_once ( $functions_path . 'admin-shortcodes.php' );	// Woo Shortcodes
