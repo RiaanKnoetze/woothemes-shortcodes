@@ -1,0 +1,531 @@
+/*-----------------------------------------------------------------------------------
+
+TABLE OF CONTENTS:
+
+0. Font Import
+1. Info Boxes
+2. Buttons
+3. Columns
+4. Tweetmeme
+5. Twitter
+6. Digg
+7. Related Posts
+8. Horizontal Rule
+9. Quote
+10. Icon Links
+11. Facebook
+
+13. Tabber
+-13.1 Tabber Alternate Style - Boxed
+-13.2 Tabber Alternate Style - Vertical
+14. Dropcap
+15. Content Toggle
+-15.1 Toggle Alternate Style - White
+16. Highlight and Abbreviation
+17. List Styles - Unordered List
+18. List Styles - Ordered List
+19. Social Icon
+
+-----------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------*/
+/* 0. Font Import */
+/*-------------------------------------------------------------------------------------------*/
+@font-face {
+  font-family: 'fontawesome';
+  src: url('../fonts/fontawesome-webfont.eot');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg#fontawesome-webfont') format('svg'), url('../fonts/fontawesome-webfont.woff2#') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* 1. Info Boxes */
+/*-------------------------------------------------------------------------------------------*/
+p.woo-sc-box, div.woo-sc-box {
+	margin:1em 0 1.5em 0; 
+	padding:9px 20px;
+	border-width:1px; 
+	border-style:solid;
+	color:#555;
+	text-shadow:none;
+}
+.woo-sc-box.none {border-width:0;}
+.woo-sc-box.full {border-width:1px;}
+.woo-sc-box.medium {padding:18px 20px 18px 50px; font-size:1.1em;}
+.woo-sc-box.large {padding:25px 27px 25px 50px; font-size:1.2em; }
+.woo-sc-box.rounded { 
+	border-radius: 0.3em; 
+}
+.woo-sc-box:before {
+	font-family: "fontawesome";
+	margin-right: 0.5em;
+}
+.woo-sc-box.alert {
+	background-color: #bf3822;
+	color: #fff;
+	border: none;
+}
+.woo-sc-box.alert:before {
+	content: "\f00d";
+}
+.woo-sc-box.download {
+	background-color: #925786;
+    color: #fff;
+    border: none;
+}
+.woo-sc-box.download:before {
+	content: "\f019";
+}
+.woo-sc-box.tick { 
+	background-color: #71b02f;
+    color: #fff;
+    border: none;
+}
+.woo-sc-box.tick:before {
+	content: "\f00c";
+}
+.woo-sc-box.info { 
+	background-color: #47a4cc;
+	color: #fff;
+	border: none;
+}
+.woo-sc-box.info:before {
+	content: "\f129";
+}
+.woo-sc-box.note { 
+	background-color: #f0f0f0; 
+	border-color: #ccc;
+}
+.woo-sc-box.note:before { 
+	content: "\f192";
+}
+.woo-sc-box.normal { border-color:#ccc; background:#eee; padding:9px 15px;}
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* 2. Buttons */
+/*-------------------------------------------------------------------------------------------*/
+a.woo-sc-button {
+	display: inline-block;
+	line-height: 1em;
+	padding: 6px 13px;
+	margin:0 .6em 1.5em 0;
+	color: #fff;
+	text-align: center;
+	text-decoration: none !important;
+	border-radius: 0.2em;
+	background-color: #237fd7;
+}
+
+a.woo-sc-button.small { padding:2px 10px;}
+a.woo-sc-button.large { padding:7px 16px; font-size:1.4em;}
+a.woo-sc-button.xl { padding:9px 20px; font-size:1.8em;}
+
+a.woo-sc-button:hover,
+a.woo-sc-button.hover,
+a.woo-sc-button.active {
+	text-decoration: none !important;
+	background: #0073d2; 
+}
+
+a.woo-sc-button.dark span { color:#555; text-shadow:0 1px #fff;}
+a.woo-sc-button.custom {
+	border: 1px solid;
+}
+a.woo-sc-button.custom:hover { opacity:0.85; }
+
+a.woo-sc-button span { line-height:1.2em; min-height: 16px; }
+a.woo-sc-button span:before {
+	font-family: "fontawesome";
+	margin-right: 0.5em;
+}
+a.woo-sc-button span.woo-info:before { 
+	content: "\f129";
+}
+a.woo-sc-button span.woo-tick:before { 
+	content: "\f00c";
+}
+a.woo-sc-button span.woo-download:before {
+	content: "\f019";
+}
+a.woo-sc-button span.woo-note:before { 
+	content: "\f192";
+}
+a.woo-sc-button span.woo-alert:before { 
+	content: "\f00d";
+}
+
+a.woo-sc-button.red {
+	background-color: #bf3822;
+}
+a.woo-sc-button.red:hover {
+	background: #ad2d18;
+}
+
+a.woo-sc-button.orange {
+	background-color: #d76b23;
+}
+a.woo-sc-button.orange:hover {
+	background: #d25e00;
+}
+
+a.woo-sc-button.green {
+	background-color: #71b02f;
+}
+a.woo-sc-button.green:hover {
+	background: #65a224;
+}
+
+a.woo-sc-button.aqua {
+	background-color: #23d7af;
+}
+a.woo-sc-button.aqua:hover {
+	background: #00d2a8;
+}
+
+a.woo-sc-button.teal {
+	background-color: #47a4cc;
+}
+a.woo-sc-button.teal:hover {
+	background: #318ab1;
+}
+
+a.woo-sc-button.purple {
+	background-color: #96588a;
+}
+a.woo-sc-button.purple:hover {
+	background: #864d7b;
+}
+
+a.woo-sc-button.pink {
+	background-color: #d723d5;
+}
+a.woo-sc-button.pink:hover {
+	background: #bc00d2;
+}
+
+a.woo-sc-button.silver {
+	color: #444 !important;
+	background-color: #d8d8d8;
+}
+a.woo-sc-button.silver:hover {
+	background: #ccc;
+}
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* 3. Columns */
+/*-------------------------------------------------------------------------------------------*/
+.twocol-one{width:48%;}
+.threecol-one{width:30.66%;}
+.threecol-two{width:65.33%;}
+.fourcol-one{width:22%;}
+.fourcol-two{width:48%;}
+.fourcol-three{width:74%;}
+.fivecol-one{width:16.8%;}
+.fivecol-two{width:37.6%;}
+.fivecol-three{width:58.4%;}
+.fivecol-four{width:78.4%;}
+.sixcol-one{width:13.33%;}
+.sixcol-two{width:30.66%;}
+.sixcol-three{width:47.99%;}
+.sixcol-four{width:65.33%;}
+.sixcol-five{width:82.67%;}
+.twocol-one,.threecol-one,.threecol-two,.fourcol-one,.fourcol-two,.fourcol-three,.fivecol-one,.fivecol-two,.fivecol-three,.fivecol-four,.sixcol-one,.sixcol-two,.sixcol-three,.sixcol-four,.sixcol-five{float:left;margin-right:4%;margin-bottom:4%;position:relative;}
+.last{ clear:right; margin-right:0; }
+@media only screen and (max-width: 768px) {
+	.twocol-one,.threecol-one,.threecol-two,.fourcol-one,.fourcol-two,.fourcol-three,.fivecol-one,.fivecol-two,.fivecol-three,.fivecol-four,.sixcol-one,.sixcol-two,.sixcol-three,.sixcol-four,.sixcol-five{margin-right: 0; width: 100% !important;}
+}
+.clear:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* 4. Tweetmeme */
+/*-------------------------------------------------------------------------------------------*/
+.woo-tweetmeme.left { margin:0 1.5em 1.5em 0; float:left; }
+.woo-tweetmeme.none { margin:0 0 1.5em 0;  }
+.woo-tweetmeme.right { margin:0 0 1.5em 1.5em; float:right;  }
+
+/*-------------------------------------------------------------------------------------------*/
+/* 5. Twitter */
+/*-------------------------------------------------------------------------------------------*/
+.woo-sc-twitter.left { margin:0 1.5em 1.5em 0; float:left; }
+.woo-sc-twitter.none { margin:0 0 1.5em 0;  }
+.woo-sc-twitter.right { margin:0 0 1.5em 1.5em; float:right;  }
+
+/*-------------------------------------------------------------------------------------------*/
+/* 6. Digg */
+/*-------------------------------------------------------------------------------------------*/
+.woo-digg.left { margin:0 1.5em 1.5em 0; float:left; }
+.woo-digg.none { margin:0 0 1.5em 0;  }
+.woo-digg.right { margin:0 0 1.5em 1.5em; float:right;  }
+
+/*-------------------------------------------------------------------------------------------*/
+/* 7. Related posts */
+/*-------------------------------------------------------------------------------------------*/
+.woo-sc-related-posts .thumbnail { float:left; margin:0 1em 1em 0;}
+.woo-sc-related-posts li { clear:both; }
+
+/*-------------------------------------------------------------------------------------------*/
+/* 8. Horizontal Rule */
+/*-------------------------------------------------------------------------------------------*/
+.woo-sc-hr { border-bottom:1px solid #e6e6e6; }
+.woo-sc-hr, .woo-sc-divider { clear:both; display:block; margin-bottom:20px; padding-top:20px; width:100%; }
+.woo-sc-divider.flat { padding:0; margin:0; }
+
+/*-------------------------------------------------------------------------------------------*/
+/* 9. Quote */
+/*-------------------------------------------------------------------------------------------*/
+.woo-sc-quote p { 
+	margin: 1em 20px; 
+	padding: 0 0 0 55px; 
+	font-size: 1.2em; 
+	color:#777; 
+	min-height: 32px; 
+	position: relative;
+}
+.woo-sc-quote p:before {
+	font-family: "fontawesome";
+	font-size: 2em;
+	content: "\f10e";
+	position: absolute;
+	top: -5px;
+	left: 0;
+}
+.woo-sc-quote.boxed { background: #f5f5f5; border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;}
+.woo-sc-quote.boxed.left { margin: 0 1.5em 1em 0;}
+.woo-sc-quote.boxed.right { margin: 0 0 1em 1.5em;}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+	.woo-sc-quote.left { float:left; width:30%;}
+	.woo-sc-quote.right { float:right; width:30%;}
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* 10. Icon Links */
+/*-------------------------------------------------------------------------------------------*/
+.woo-sc-ilink { padding:0 0.3em;  }
+.woo-sc-ilink a { text-decoration: none; display: inline-block; }
+.woo-sc-ilink a:hover { text-decoration: none; }
+.woo-sc-ilink a:before {
+	font-family: "fontawesome";
+	margin-right: 0.2em;
+}
+.woo-sc-ilink .download:before {
+	content: "\f019";
+}
+.woo-sc-ilink .tick:before {
+	content: "\f00c";
+}
+.woo-sc-ilink .info:before {
+    content: "\f129";
+}
+.woo-sc-ilink .note:before {
+    content: "\f192";
+}
+.woo-sc-ilink .alert:before {
+    content: "\f00d";
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* 11. Facebook */
+/*-------------------------------------------------------------------------------------------*/
+.woo-fbshare.left { margin:0 1.5em 1.5em 0; float:left; }
+.woo-fbshare.none { margin:0 0 1.5em 0;  }
+.woo-fbshare.right { margin:0 0 1.5em 1.5em; float:right;  }
+
+.woo-fblike.left { margin:0 1.5em 1.5em 0; float:left; }
+.woo-fblike.none { margin:0 0 1.5em 0;  }
+.woo-fblike.right { margin:0 0 1.5em 1.5em; float:right;  }
+
+/*-------------------------------------------------------------------------------------------*/
+/* 13. Tabber */
+/*-------------------------------------------------------------------------------------------*/
+
+.shortcode-tabs { background:#f0f0f0; background:rgba(0,0,0,.05); clear: both; height:auto; display: block; padding:5px; margin-bottom:30px; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; }
+.shortcode-tabs ul.tab_titles { padding:0px; background:none; border:none; margin:0;}
+.shortcode-tabs ul.tab_titles li.nav-tab { background:none; padding:0; float: left; display:inline; color: #ffffff; margin: 0 5px 0 0; cursor: pointer; }
+.shortcode-tabs ul.tab_titles li.nav-tab.ui-state-active a, .shortcode-tabs ul.tab_titles li.nav-tab a:hover { background:#fff; text-decoration:none; outline: none; }
+.shortcode-tabs ul.tab_titles li.nav-tab a {	color:#777; display: block;float: left;padding: 8px; text-transform:uppercase; font:11px/18px sans-serif; }
+.shortcode-tabs ul.tab_titles li.nav-tab.ui-tabs-selected a, .shortcode-tabs ul.tab_titles li.nav-tab a:hover { -moz-border-radius-topright:3px; -moz-border-radius-topleft:3px;-webkit-border-top-right-radius: 3px; -webkit-border-top-left-radius:3px; border-top-right-radius:3px; border-top-left-radius:3px; }
+.shortcode-tabs .tab { background:#fff; padding:10px; text-align: left; clear: both; }
+.shortcode-tabs .tab li.nav-tab { background:#fff;  }
+.shortcode-tabs .tab ul.tab_titles { margin:0; border: 1px solid #e6e6e6; border-width:1px 0 1px 0; }
+.shortcode-tabs .tab li.nav-tab { border:1px solid #e6e6e6; border-width:0 1px 1px 1px; padding:10px; }
+.shortcode-tabs .tab li.nav-tab a { color:#555; font:bold 12px/18px sans-serif; }
+.shortcode-tabs .tab a:hover {}
+.shortcode-tabs .ui-tabs-hide { display: none; }
+
+/*-------------------------------------------------------------------------------------------*/
+/* -13.1 Tabber Alternate Style - Boxed */
+/*-------------------------------------------------------------------------------------------*/
+
+.shortcode-tabs.boxed { background: #FFFFFF; }
+	.shortcode-tabs.boxed ul.tab_titles { clear: both; float: left; background:none; border:none; border-left: 1px solid #EBEBEB; margin-bottom: 0px; position: relative; z-index: 2; }
+		.shortcode-tabs.boxed ul.tab_titles li { background: #EBEBEB; padding:0; border-top: 1px solid #EBEBEB; border-right: 1px solid #EBEBEB; margin-right: 0; }
+		.shortcode-tabs.boxed ul.tab_titles li.ui-state-active { background: #FFFFFF; border-bottom: 1px solid #FFFFFF; }
+	.shortcode-tabs.boxed .tab { border: 1px solid #EBEBEB; top: -2px; position: relative; z-index: 1; }
+
+/*-------------------------------------------------------------------------------------------*/
+/* -13.2 Tabber Alternate Style - Vertical */
+/*-------------------------------------------------------------------------------------------*/
+
+.shortcode-tabs.vertical { background: #FFFFFF; }
+	.shortcode-tabs.vertical .tab_header { border: 1px solid #F0F0F0; border-bottom: 0px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; width: 25%; float: left; margin-bottom: -5px; color:#555; font:bold 12px/18px sans-serif; }
+		.shortcode-tabs.vertical .tab_header {
+
+			/* Gradient Background */
+			background: #f5f5f5;
+		  	background: -moz-linear-gradient(100% 100% 90deg, #f5f5f5, #fff);
+		  	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#f5f5f5));
+
+		  	border-bottom-left-radius: 0px;
+			border-bottom-right-radius: 0px;
+			-moz-border-radius-bottomright: 0px;
+			-moz-border-radius-bottomleft: 0px;
+			-webkit-border-bottom-left-radius: 0px;
+			-webkit-border-bottom-right-radius: 0px;
+
+		}
+		.shortcode-tabs.vertical .tab_header span { display: block; padding: 8px 8px 12px 8px; border: 1px solid #EBEBEB; }
+	.shortcode-tabs.vertical ul.tab_titles {  clear: left; float: left; background:none; border: 1px solid #F0F0F0; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; margin-bottom: 0px; position: relative; z-index: 2; width: 25%; }
+		.shortcode-tabs.vertical ul.tab_titles.has_title { border-top: 0px !important; margin-top: 5px; }
+		.shortcode-tabs.vertical ul.tab_titles.has_title {
+
+			border-top-left-radius: 0px;
+			border-top-right-radius: 0px;
+			-moz-border-radius-topright: 0px;
+			-moz-border-radius-topleft: 0px;
+			-webkit-border-top-left-radius: 0px;
+			-webkit-border-top-right-radius: 0px;
+
+		}
+		.shortcode-tabs.vertical ul.tab_titles li { clear: both; background:none; padding:0; border-bottom: 1px solid #EBEBEB; border-left: 1px solid #EBEBEB; border-right: 1px solid #EBEBEB; display: block !important; float: none !important; margin-right: 0; }
+		.shortcode-tabs.vertical ul.tab_titles li.ui-state-active {}
+			.shortcode-tabs.vertical ul.tab_titles li.ui-state-active a { background: #F0F0F0; background: rgba(0,0,0,.05); }
+			.shortcode-tabs.vertical ul.tab_titles li a:link { display: block; float: none !important; }
+			.shortcode-tabs.vertical ul.tab_titles li a:hover { background: #F0F0F0; background: rgba(0,0,0,.05); }
+	.shortcode-tabs.vertical .tab { clear: right !important; top: 5px; position: relative; z-index: 1; margin-left: 30%; padding: 0px; }
+
+
+/* Responsive Tweaks for the Vertical Tabber */
+@media only screen and (max-width: 767px) {
+	.shortcode-tabs.vertical .ui-tabs-nav{
+		clear: both !important;
+		display: block !important;
+		width: 100% !important;
+		margin-bottom: 30px!important;
+	}
+	.shortcode-tabs.vertical .ui-tabs-nav li  {
+		float: left!important;
+		clear: none!important;
+	}
+	.shortcode-tabs.vertical .tab {
+		margin-left: 0!important;
+	}
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* 14. Dropcap */
+/*-------------------------------------------------------------------------------------------*/
+
+span.dropcap { font-size: 300%; font-weight: bold; float: left; position: relative; margin:5px 7px 0 0; line-height: 0.7em; }
+
+/*-------------------------------------------------------------------------------------------*/
+/* 15. Content Toggle */
+/*-------------------------------------------------------------------------------------------*/
+
+.shortcode-toggle { margin: 0 0 1.2em;}
+.shortcode-toggle h4 {
+	margin: 0;
+	font-size: inherit;
+}
+.shortcode-toggle h4 a { 
+	display: block; 
+	padding: 3px 0 3px 10px; 
+	color: inherit;
+}
+.shortcode-toggle h4 a:after {
+	font-family: "fontawesome";
+	content: "\f146";
+	float: right;
+	margin: 0 10px;
+	color: inherit;
+	color: rgba(0,0,0,0.5);
+}
+.shortcode-toggle.closed h4 a:after  { 
+	font-family: "fontawesome";
+	content: "\f0fe";
+	float: right;
+	margin: 0 10px;
+	color: rgba(0,0,0,0.5);
+}
+.shortcode-toggle .toggle-content  { padding: 10px 10px; background: #f9f9f9; }
+.shortcode-toggle.closed .toggle-content, .shortcode-toggle .more-text.closed { display: none; }
+.shortcode-toggle .more-text.open { display: block; }
+.shortcode-toggle.border { border: 1px solid #EBEBEB; }
+
+/*-------------------------------------------------------------------------------------------*/
+/* -15.1 Content Toggle Alternate Style - White */
+/*-------------------------------------------------------------------------------------------*/
+
+.shortcode-toggle.white h4 a { background-color: #FFFFFF; }
+.shortcode-toggle.white .toggle-content { background-color: #FFFFFF; }
+
+/*-------------------------------------------------------------------------------------------*/
+/* 16. Highlight and Abbreviation */
+/*-------------------------------------------------------------------------------------------*/
+
+span.shortcode-highlight { background: #FFFFAA; padding: 3px 3px 1px; }
+
+abbr { border-bottom: 1px dashed #999999; cursor: help; }
+
+/*-------------------------------------------------------------------------------------------*/
+/* 17. List Styles - Unordered List */
+/*-------------------------------------------------------------------------------------------*/
+
+.entry .shortcode-unorderedlist ul li, .shortcode-unorderedlist ul li, .entry .shortcode-unorderedlist ul li ul, .shortcode-unorderedlist ul li ul {
+   list-style-type: none;
+   padding-left:25px;
+}
+
+.entry .shortcode-unorderedlist.tick ul li, .shortcode-unorderedlist.tick ul li { background: url(../images/shortcode-tick.png) no-repeat left top; }
+.entry .shortcode-unorderedlist.red-x ul li, .shortcode-unorderedlist.red-x ul li { background: url(../images/shortcode-red-x.png) no-repeat left top; }
+.entry .shortcode-unorderedlist.bullet ul li, .shortcode-unorderedlist.bullet ul li { background: url(../images/shortcode-bullet.png) no-repeat left top; }
+.entry .shortcode-unorderedlist.green-dot ul li, .shortcode-unorderedlist.green-dot ul li { background: url(../images/shortcode-green-dot.png) no-repeat left top; }
+.entry .shortcode-unorderedlist.arrow ul li, .shortcode-unorderedlist.arrow ul li { background: url(../images/shortcode-arrow.png) no-repeat left top; }
+.entry .shortcode-unorderedlist.star ul li, .shortcode-unorderedlist.star ul li { background: url(../images/shortcode-star.png) no-repeat left top; }
+
+/*-------------------------------------------------------------------------------------------*/
+/* 18. List Styles - Ordered List */
+/*-------------------------------------------------------------------------------------------*/
+
+.entry .shortcode-orderedlist ol li, .entry .shortcode-orderedlist ol li ol, .shortcode-orderedlist ol li {
+   list-style-type: none;
+   margin-left: 25px;
+}
+
+.entry .shortcode-orderedlist.armenian ol li, .shortcode-orderedlist.armenian ol li { list-style-type: armenian; }
+.entry .shortcode-orderedlist.decimal ol li, .shortcode-orderedlist.decimal ol li { list-style-type: decimal; }
+.entry .shortcode-orderedlist.decimal-leading-zero ol li, .shortcode-orderedlist.decimal-leading-zero ol li { list-style-type: decimal-leading-zero; }
+.entry .shortcode-orderedlist.georgian ol li, .shortcode-orderedlist.georgian ol li { list-style-type: georgian; }
+.entry .shortcode-orderedlist.lower-alpha ol li, .shortcode-orderedlist.lower-alpha ol li { list-style-type: lower-alpha; }
+.entry .shortcode-orderedlist.lower-greek ol li, .shortcode-orderedlist.lower-greek ol li { list-style-type: lower-greek; }
+.entry .shortcode-orderedlist.lower-latin ol li, .shortcode-orderedlist.lower-latin ol li { list-style-type: lower-latin; }
+.entry .shortcode-orderedlist.lower-roman ol li, .shortcode-orderedlist.lower-roman ol li { list-style-type: lower-roman; }
+.entry .shortcode-orderedlist.upper-alpha ol li, .shortcode-orderedlist.upper-alpha ol li { list-style-type: upper-alpha; }
+.entry .shortcode-orderedlist.upper-latin ol li, .shortcode-orderedlist.upper-latin ol li { list-style-type: upper-latin; }
+.entry .shortcode-orderedlist.upper-roman ol li, .shortcode-orderedlist.upper-roman ol li { list-style-type: upper-roman; }
+
+/*-------------------------------------------------------------------------------------------*/
+/* 19. Social Icon */
+/*-------------------------------------------------------------------------------------------*/
+
+img.social-icon { border: none; }
