@@ -6,9 +6,7 @@ TABLE OF CONTENTS:
 1. Info Boxes
 2. Buttons
 3. Columns
-4. Tweetmeme
-5. Twitter
-6. Digg
+
 7. Related Posts
 8. Horizontal Rule
 9. Quote
@@ -250,27 +248,6 @@ a.woo-sc-button.silver:hover {
 }
 
 /*-------------------------------------------------------------------------------------------*/
-/* 4. Tweetmeme */
-/*-------------------------------------------------------------------------------------------*/
-.woo-tweetmeme.left { margin:0 1.5em 1.5em 0; float:left; }
-.woo-tweetmeme.none { margin:0 0 1.5em 0;  }
-.woo-tweetmeme.right { margin:0 0 1.5em 1.5em; float:right;  }
-
-/*-------------------------------------------------------------------------------------------*/
-/* 5. Twitter */
-/*-------------------------------------------------------------------------------------------*/
-.woo-sc-twitter.left { margin:0 1.5em 1.5em 0; float:left; }
-.woo-sc-twitter.none { margin:0 0 1.5em 0;  }
-.woo-sc-twitter.right { margin:0 0 1.5em 1.5em; float:right;  }
-
-/*-------------------------------------------------------------------------------------------*/
-/* 6. Digg */
-/*-------------------------------------------------------------------------------------------*/
-.woo-digg.left { margin:0 1.5em 1.5em 0; float:left; }
-.woo-digg.none { margin:0 0 1.5em 0;  }
-.woo-digg.right { margin:0 0 1.5em 1.5em; float:right;  }
-
-/*-------------------------------------------------------------------------------------------*/
 /* 7. Related posts */
 /*-------------------------------------------------------------------------------------------*/
 .woo-sc-related-posts .thumbnail { float:left; margin:0 1em 1em 0;}
@@ -495,17 +472,56 @@ abbr { border-bottom: 1px dashed #999999; cursor: help; }
 /* 17. List Styles - Unordered List */
 /*-------------------------------------------------------------------------------------------*/
 
-.entry .shortcode-unorderedlist ul li, .shortcode-unorderedlist ul li, .entry .shortcode-unorderedlist ul li ul, .shortcode-unorderedlist ul li ul {
+.entry .shortcode-unorderedlist ul li, 
+.shortcode-unorderedlist ul li, 
+.entry .shortcode-unorderedlist ul li ul, 
+.shortcode-unorderedlist ul li ul {
    list-style-type: none;
-   padding-left:25px;
 }
 
-.entry .shortcode-unorderedlist.tick ul li, .shortcode-unorderedlist.tick ul li { background: url(../images/shortcode-tick.png) no-repeat left top; }
-.entry .shortcode-unorderedlist.red-x ul li, .shortcode-unorderedlist.red-x ul li { background: url(../images/shortcode-red-x.png) no-repeat left top; }
-.entry .shortcode-unorderedlist.bullet ul li, .shortcode-unorderedlist.bullet ul li { background: url(../images/shortcode-bullet.png) no-repeat left top; }
-.entry .shortcode-unorderedlist.green-dot ul li, .shortcode-unorderedlist.green-dot ul li { background: url(../images/shortcode-green-dot.png) no-repeat left top; }
-.entry .shortcode-unorderedlist.arrow ul li, .shortcode-unorderedlist.arrow ul li { background: url(../images/shortcode-arrow.png) no-repeat left top; }
-.entry .shortcode-unorderedlist.star ul li, .shortcode-unorderedlist.star ul li { background: url(../images/shortcode-star.png) no-repeat left top; }
+.entry .shortcode-unorderedlist ul li:before, 
+.shortcode-unorderedlist ul li:before {
+	font-family: "fontawesome";
+	margin-right: 0.5em;
+	min-width: 20px;
+    min-width: 20px;
+    display: inline-block;
+}
+
+.entry .shortcode-unorderedlist.tick ul li:before, 
+.shortcode-unorderedlist.tick ul li:before { 
+	content: "\f00c";
+}
+.entry .shortcode-unorderedlist.red-x ul li:before, 
+.shortcode-unorderedlist.red-x ul li:before { 
+	content: "\f00d";
+	color: #bf3822;
+}
+.entry .shortcode-unorderedlist.bullet ul li:before, 
+.shortcode-unorderedlist.bullet ul li:before { 
+	content: "\f101";
+}
+.entry .shortcode-unorderedlist.green-dot ul li:before, 
+.shortcode-unorderedlist.green-dot ul li:before {
+	content: "\f192";
+	color: #71b02f;
+}
+.entry .shortcode-unorderedlist.arrow ul li:before, 
+.shortcode-unorderedlist.arrow ul li:before {
+	content: "\f061";
+}
+.entry .shortcode-unorderedlist.star ul li:before, 
+.shortcode-unorderedlist.star ul li:before {
+	content: "\f005";
+}
+
+ul.icons-ul {
+    list-style: none;
+}
+
+ul.icons-ul .icon-li {
+    margin-right: 0.5em;
+}
 
 /*-------------------------------------------------------------------------------------------*/
 /* 18. List Styles - Ordered List */
