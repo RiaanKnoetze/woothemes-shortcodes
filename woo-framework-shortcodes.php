@@ -61,7 +61,7 @@ function plugin_activation_check() {
 function plugin_activation_error_notice() {
 	?>
 		<div class="notice-error notice">
-		    <p><?php _e( 'Please switch to a different theme - this is required for the WooThemes Shortcodes plugin to work.', 'woothemes-shortcodes' ); ?></p>
+		    <p><?php _e( 'Please switch to a theme that isn\'t powered by the WooFramework (e.g. Storefront) - WooThemes Shortcodes requires this to work.', 'woothemes-shortcodes' ); ?></p>
 		</div>
  	<?php
 }
